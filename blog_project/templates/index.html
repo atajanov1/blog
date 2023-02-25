@@ -1,3 +1,4 @@
+{% load static %}
 <!DOCTYPE html>
 <html class='no-js' >
 	
@@ -14,15 +15,15 @@
 		  <script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
 		
-		<link rel='stylesheet' type='text/css' href='bootstrap/css/bootstrap.min.css' >
-		<link rel='stylesheet' type='text/css' href='css/ionicons.min.css' >
+		<link rel='stylesheet' type='text/css' href="{% static 'bootstrap/css/bootstrap.min.css' %}" >
+	<link rel='stylesheet' type='text/css' href="{% static 'css/ionicons.min.css' %}" >
 		
-		<link rel='stylesheet' type='text/css' href='css/owl.carousel.css' >
-		<link rel='stylesheet' type='text/css' href='css/owl.theme.css' >
-		<link rel='stylesheet' type='text/css' href='css/owl.transitions.css' >
-		<link rel='stylesheet' type='text/css' href='css/magnific-popup.css' >
-		<link rel='stylesheet' type='text/css' href='css/style.css' >
-		<link rel='stylesheet' type='text/css' href='css/color-default.css' >
+		<link rel='stylesheet' type='text/css' href="{% static 'css/owl.carousel.css' %}" >
+		<link rel='stylesheet' type='text/css' href="{% static 'css/owl.theme.css' %}" >
+		<link rel='stylesheet' type='text/css' href="{% static 'css/owl.transitions.css' %}" >
+		<link rel='stylesheet' type='text/css' href="{% static 'css/magnific-popup.css' %}" >
+		<link rel='stylesheet' type='text/css' href="{% static 'css/style.css' %}" >
+		<link rel='stylesheet' type='text/css' href="{% static 'css/color-default.css' %}" >
 		
 		
 	</head>
@@ -34,7 +35,7 @@
 		===============================================================================-->
 		<div id='preloader' >
 			<div class='loader' >
-				<img src='img/load.gif' alt='symp' >
+				<img src="{% static  'img/load.gif' %}"  alt='symp' >
 			</div>
 		</div>
 		
@@ -59,34 +60,11 @@
 					<div class='front-person-img' >
 						
 						<!--person's image-->
-						<img src='img/man1.png' alt='Symp' >
+						<img src="{% static 'img/man.png' %}" alt='Symp' >
 						<!--/person's image-->
 						
 					</div>
 					
-					<!--person's titles-->
-					<div class='front-person-titles' >
-						
-						<!--title1-->
-						<span class='t1' >
-							Designer
-						</span>
-						<!--/title1-->
-						
-						<!--title2-->
-						<span class='t2' >
-							Gamer guy
-						</span>
-						<!--/title2-->
-						
-						<!--title3-->
-						<span class='t3' >
-							Freelancer
-						</span>
-						<!--/title3-->
-						
-					</div>
-					<!--/person's titles-->
 					
 					<nav class='front-person-links' >
 						
@@ -133,7 +111,7 @@
 					<div class='front-heading text-center' >
 						
 						<h2>
-							Johny Doe
+							Abdusharif Atajanov
 						</h2>
 						
 					
@@ -173,7 +151,7 @@
 							<div class='col-md-4' >
 								<div class='about-person-img' >
 									
-									<img src='img/man2.png' alt='symp'>
+									<img src="{% static 'img/man2.png" alt='symp'>
 									
 								</div>
 							

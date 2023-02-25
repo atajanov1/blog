@@ -1,5 +1,5 @@
-from django.shortcuts import render
 from django.http import HttpResponse
+from django.shortcuts import render, get_object_or_404
 
-# def members(request):
-#     return HttpResponse("Hello world!")
+def home_page(request):
+    return render(request, "index.html")
