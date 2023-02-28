@@ -60,9 +60,10 @@
 					<div class='front-person-img' >
 						
 						<!--person's image-->
-						<img src="{% static 'img/man.png' %}" alt='Symp' >
+						{% for img in images %}
+							<img src="{{ img.url }}" alt='{{ img.url }}' >
 						<!--/person's image-->
-						
+						{% endfor %}
 					</div>
 					
 					
